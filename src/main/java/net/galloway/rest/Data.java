@@ -7,13 +7,8 @@ import lombok.Setter;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Getter
 @Setter
-public class Status {
+public class Data {
 
-    private String timestamp;
-    private int errorCode;
-    private String errorMessage;
-    private int elapsed;
-    private int creditCount;
-    private String notice;
+    Object[] cryptos;
 
 }

@@ -66,7 +66,7 @@ public class ConsumingRestApplication {
             ResponseEntity<String> response =
             restTemplate.exchange(builder.toUriString(), HttpMethod.GET,request, String.class);
 
-            log.info(response.getBody());
+            log.info(response.toString());
         };
     }
 }

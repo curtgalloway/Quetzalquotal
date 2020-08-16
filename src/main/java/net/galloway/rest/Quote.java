@@ -6,14 +6,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Quote {
 
     private Status status;
-    //private Data data;
+    private Data data;
 
     public Quote() {}
 
-
-
     @Override
     public String toString() {
-        return "";
+        return status.getTimestamp();
     }
 }
